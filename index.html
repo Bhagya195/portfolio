@@ -1,6 +1,7 @@
 <!DOCTYPE html>
+<html>
+<head>
 <style>
-    <style>
 
 ul {
   list-style-type: none;
@@ -57,15 +58,23 @@ body {
   font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   font-weight: bold;
 }
+div#welcome {
+  width: 100px;
+  height: 50px;
+  background-color: red;
+  font-weight: bold;
+  position: relative;
+  animation: mymove 5s infinite;
+}
+#welcome {animation-timing-function: ease;}
+@keyframes mymove {
+  from{left: 0px;}
+  to{left: 300px;}
+}
 </style>
-<html lang="en-us">
-    <head><title>My Portfolio</title>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 </head>
-    <body>
-        <div>
+<body>
+<div>
     <ul>
         <li><a href="#">Bhagya Anandapu</a></li>  
         <li class="dropdown" style="float: right;">
@@ -78,22 +87,13 @@ body {
         </li>
       </ul>
 </div>
-        <div id="intro">
-            <table>
-                <h2>Hello there,</h2>
-        <h1>This is <strong>Bhagya Anandapu</strong></h1>
-        <h3>Welcome to my page \(^o^)/</h3>
-        </div>
-        <div>
-            <tr id="project-link"><h3>
-                Know more about me!
+<div>
+  <div id="welcome">
+    <h1>Hello there,</h1>
+  </div>
+</div>
 
-            </h3>
-            <a href="/portfolio/project.html"> Click here to checkout my project</a></tr>
-            
-            </table>
-            
-        </div>
-        
-    </body>
+</body>
 </html>
+
+
